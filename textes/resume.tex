@@ -1,0 +1,29 @@
+{\abstract
+
+% en gros; contenu du document, originalité, valeur scientifique
+% environ 300 mots
+
+% contenu:
+% but, nature et envergure de la recherche
+% sujets traités
+% hypothèses de travail et méthodes utilisées
+% principaux résultats
+% conclusion auquels ont est arrivé
+
+% 4 ou 5 mots clés
+
+L'interface native permet à un logiciel de profiter des avantages des langages natifs ainsi que de ceux du langage de haut niveau. Elle intervient entre les différents langages pour permettre les appels de méthodes et la conversion des données. Son utilisation amène cependant généralement une perte de sûreté à l'exécution du logiciel et son emploi est souvent complexe. 
+
+%FIXME JEAN: à partir d'ici tu ne devrais parler que de Nit et C
+
+Dans le cadre de cette recherche, nous développons l'interface native du langage de programmation à objets Nit. Notre recherche vise à résoudre au mieux les problèmes soulevés par l'utilisation d'une interface native, et ce, par une analyse rigoureuse des différents détails de conception d'une interface. Notre intention est donc de concevoir, selon des objectifs précis, l'interface native idéale pour le langage Nit. Pour mettre à l'épreuve notre proposition, nous avons conçu et implémenté l'interface native du compilateur Nit.
+
+La conception de cette interface native s'appuie donc sur des objectifs que nous considérons garants d'une interface native de qualité. Ces objectifs consistent à préserver la sûreté d'exécution du logiciel, maintenir une connaissance du flot d'appels, utiliser le langage Nit de façon expressive et selon ses forces, conserver une syntaxe naturelle en C ainsi qu'offrir une interface native versatile et d'utilisation rapide par tout autre moyen.
+
+Pour atteindre ces objectifs, nous proposons quatre grandes approches clés; la forme des modules hybrides pour gérer la coexistence de deux langages; une déclaration explicite des appels de méthodes réalisées depuis le langage C pour conserver la connaissance du flot d'appels; une représentation symétrique des types et méthodes Nit en C pour en permettre une utilisation naturelle et vérifiée statiquement; les classes natives qui représentent les types C en Nit et leur appliquent les forces du paradigme de programmation à objets, dont le polymorphisme.
+
+Enfin, pour valider l'interface native proposée et implémentée, nous présentons comment nous avons utilisé cette interface pour réaliser des modules et des logiciels Nit. Nous démontrons également que cette interface peut être utilisée dans le développement d'autres interfaces spécialisées en fonction de besoins spécifiques.
+
+Mots clés: interface native, interface de fonctions étrangères, compilation, langages de programmation à objets
+}
+

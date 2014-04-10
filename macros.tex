@@ -1,0 +1,50 @@
+% Items, and Enum
+\newenvironment{Items}%
+{\begingroup\setlength{\topsep}{.050\parsep}\addtolength{\parskip}{-.75\parskip}\setlength{\partopsep}{.25\partopsep}%
+\begin{itemize}\setlength{\itemsep}{0pt}\addtolength{\parsep}{-.1\parsep}}%
+{\end{itemize}\endgroup\smallbreak}
+
+\newenvironment{Enum}%
+{\begingroup\setlength{\topsep}{.050\parsep}\addtolength{\parskip}{-.75\parskip}\setlength{\partopsep}{.25\partopsep}%
+\begin{enumerate}\setlength{\itemsep}{0pt}\addtolength{\parsep}{-.1\parsep}}%
+{\end{enumerate}\endgroup\smallbreak}
+
+\newcommand{\TT}[1]{{\tt #1}}
+
+%\newcommand{\acompleter}[1]{{\footnote{\`A compl\'eter: #1!}}
+
+%\newcommand{\averifier}[1]{{\footnote{\`A v\'erifier: #1!}}
+
+\newtheorem{definition}{D\'efinition}
+
+\floatstyle{boxed}
+\newfloat{algorithme}{htbp}{lop}
+\floatname{algorithme}{Algorithme}
+
+\floatstyle{ruled}
+\newfloat{pseudocode}{htbp}{lop}
+\floatname{pseudocode}{Pseudocode}
+
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\usenit}{\lstset{
+language=Ruby,
+morekeywords={fun,var,redef,special,super,private,public,universal,new,is,extern,nullable,import,init,abstract},
+%tabsize=4,                      % sets default tabsize to 2 spaces
+%basicstyle=\footnotesize,       % the size of the fonts that are used for
+}}
+
+
+% ref http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\newcommand{\usenitannexes}{\lstset{ %
+language=Ruby,
+morekeywords={fun,var,redef,special,super,private,public,universal,new,is,extern,nullable,import,init,abstract},
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+numbersep=5pt,                  % how far the line-numbers are from the code
+tabsize=4,                      % sets default tabsize to 2 spaces
+}}
+
+
